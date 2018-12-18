@@ -7,17 +7,22 @@ package net.muroc.Exception;
 import java.awt.TrayIcon.MessageType;
 
 public class FieldValidationError {
-    private String filed;
+
+    public enum MessageType
+    {
+        SUCCESS,INFO,WARNING,ERROR
+    }
+    private String field;
     private String message;
     private MessageType type;
 
-    public String getFiled()
+    public String getField()
     {
-        return this.filed;
+        return this.field;
     }
-    public void setFiled(String filed)
+    public void setFiled(String field)
     {
-        this.filed = filed;
+        this.field = field;
     }
     public String getMessage()
     {

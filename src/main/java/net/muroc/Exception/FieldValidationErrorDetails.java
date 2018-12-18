@@ -53,6 +53,8 @@ public class FieldValidationErrorDetails {
         return error_detail;
     }
 
+    public int getError_status(){return error_status;}
+
     public long getError_timeStamp() {
         return error_timeStamp;
     }
