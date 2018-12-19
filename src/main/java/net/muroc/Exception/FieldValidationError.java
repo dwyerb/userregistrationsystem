@@ -6,12 +6,11 @@ package net.muroc.Exception;
 
 import java.awt.TrayIcon.MessageType;
 
+
+
 public class FieldValidationError {
 
-    public enum MessageType
-    {
-        SUCCESS,INFO,WARNING,ERROR
-    }
+
     private String field;
     private String message;
     private MessageType type;
