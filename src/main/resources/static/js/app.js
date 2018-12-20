@@ -6,7 +6,8 @@ var app = angular.module('userregistrationsystem', [ 'ngRoute', 'ngResource' ]);
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
-            templateUrl : '/static/template/home.html',
+            //templateUrl : '/static/template/home.html',
+            templateUrl : '/template/home.html',
             controller : 'homeController'
         })
 
@@ -16,7 +17,8 @@ app.config(function($routeProvider, $locationProvider) {
         })
 
         .when('/register-new-user',{
-            templateUrl : '/static/template/userregistration.html',
+            //templateUrl : '/static/template/userregistration.html',
+            templateUrl : '/template/userregistration.html',
             controller : 'registerUserController'
         })
 
